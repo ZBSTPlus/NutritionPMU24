@@ -1,0 +1,433 @@
+Food/100g,Energy(Kcal),Protein(g),Carbohydrate(g),Fat(g)
+Baked macoroni pasta,113,3.9,22.5,0.4
+Bread toast,73,2.7,13.5,0.8
+Chapati,339,8.8,54.0,9.6
+Cornflakes with milk,197,7.0,32.1,4.6
+Dosa with groundnut Chutney,209,7.0,32.3,4.8
+Idiyappam,111,2.3,23.0,0.1
+Jowar Idli,151,6.3,27.8,0.7
+Jowar Upma,130,3.0,21.1,3.0
+Masala Dosa,212,4.6,29.4,8.4
+Oats Idli,158,7.4,27.5,2.0
+Oats Upma,142,4.2,21.4,4.4
+Oats Uttapam,141,4.3,19.5,5.5
+Pasta,145,4.1,23.9,3.0
+Pesarattu ,106,6.7,13.8,2.8
+Pesarattu Upma,120,6.0,16.2,2.9
+Plain Dosa,160,5.0,30.6,0.3
+Plain Idli,156,5.7,30.7,0.3
+Puffed rice Upma,179,3.1,31.4,3.2
+Puri,425,6.9,40.6,26.3
+Ragi Dosa,150,3.9,12.5,0.3
+Ragi Dosa with groundnut Chutney,173,6.6,28.4,2.6
+Ragi Idli,147,5.5,27.6,0.7
+Ravva Dosa,127,0.8,5.1,2.5
+Ravva Idli,186,4.4,25.2,2.5
+Rice Pongal,171,5.6,30.0,2.7
+Riceflakes  Upma,136,2.3,23.9,2.8
+Sago Upma,128,0.1,26.1,2.5
+Uttapam,179,5.7,30.7,2.8
+Wheat Pongal ,125,4.5,19.3,2.8
+Wheat ravva Upma,98,2.3,14.7,2.7
+Avocado chutney,111,1.7,3.1,8.8
+Coconut chutney,94,2.1,5.2,7.1
+Ginger chutney,83,5.0,12.4,0.9
+Gogu chutney,59,3.3,3.1,3.1
+Groundnut chutney,81,2.4,2.6,6.4
+Kovai chutney,47,1.3,3.3,2.7
+Onion chutney,48,0.5,4.5,3.0
+Pudina chutney,42,2.3,0.0,2.8
+Ridgegourd chutney,41,1.0,2.7,2.6
+Ridgegourd Kovai chutney,48,1.2,3.5,2.7
+Tomato chutney,38,0.3,2.1,2.7
+Bundi Raita,77,1.7,3.4,0.8
+Carrot raita,49,2.3,3.2,4.0
+Curd,74,3.2,4.9,4.4
+Keera raita,42,1.7,3.7,2.4
+Palak raita,49,3.2,3.2,3.5
+Plain raita,76,3.2,4.8,4.4
+Bajra sankati,106,2.7,20.7,0.8
+Brown rice,90,2.2,18.7,0.3
+Curd rice,81,2.0,7.0,4.7
+Egg fried rice,223,10.0,23.9,9.3
+Jackfruit Biryani,95,1.7,20.6,0.1
+Jeera rice,116,1.6,20.1,2.6
+Jowar sankati,102,2.9,20.2,0.5
+Pudina coriander rice,120,3.3,24.5,0.3
+Pulihora,109,2.3,23.4,0.1
+Ragi sankati,98,2.1,20.0,0.5
+Chicken biryani,139,6.4,19.2,3.9
+Mutton biryani,141,5.8,19.3,4.3
+Beef biryani,142,5.2,19.2,4.8
+Chicken tikka biryani,135,6.4,18.0,4.1
+Egg biryani,136,6.0,16.2,5.2
+Rice mutton pulav,201,6.0,18.7,11.4
+Sambar rice,191,5.7,33.0,2.9
+Tomato rice,118,1.6,20.1,2.6
+Veg Biryani/Fried rice,132,2.4,20.9,2.7
+Brown rice rice,90,2.2,18.7,0.3
+Plain rice,107,2.3,23.1,0.1
+Bajra roti,176.7,5.3,30.8,2.7
+Dappalam,380.0,5.8,57.5,12.5
+Jowar roti,255.0,7.3,50.5,1.3
+Maize roti,221.0,6.8,39.7,3.9
+Gobi parata,254.0,5.0,34.3,11.4
+Paratha,357.5,7.8,48.0,13.5
+Phulka,162.5,5.3,32.0,0.8
+Amaranthus curry,52.0,2.4,2.9,2.7
+Amaranthus fry,76.0,3.2,2.2,5.6
+Ashgourd curry,41.0,0.5,2.8,2.5
+Ashgourd drumstick fry,54.0,1.2,4.9,2.6
+Ashgourd fry,68.0,0.8,4.0,5.1
+Babycorn fry,47.0,0.2,0.3,5.0
+Bachalaura curry,46.0,0.4,1.7,3.0
+Bachalikura,45.0,2.2,2.8,2.8
+Banana fry,160.0,1.2,24.9,4.8
+Bengalgram dhal fry,153.0,6.6,15.1,6.6
+Bottlegourd bengalgram curry,79.0,2.9,8.9,2.7
+Bottlegourd kofta,34.0,0.3,2.1,2.5
+Bottlegourd kurma,41.0,0.4,3.1,2.6
+Bottlegourd mealmaer curry,78.0,3.9,4.0,4.5
+Brinjal curry,59.0,0.4,3.1,2.7
+Cabbage and Carrot curry,145.0,2.7,10.9,10.0
+Cabbage coconut fry,43.0,1.5,3.5,2.1
+Cabbage fry,70.0,1.3,3.2,4.6
+Cabbage green peas curry,91.0,2.9,6.9,4.7
+Cabbage greengram curry,63.0,2.2,6.2,2.5
+Capsicum mealmaker curry,80.0,4.4,3.6,4.7
+Capsicum paneer,162.0,8.4,9.2,12.8
+Carrot curry,50.0,0.5,4.0,2.9
+Carrot fry,46.0,0.8,2.7,5.4
+Carrot greenpeas curry,64.0,2.0,6.2,2.6
+Carrot palak greengram dhal curry,73.0,3.2,7.7,2.9
+Cauliflower curry,43.0,1.3,2.4,2.6
+Cauliflower egg curry,86.0,5.0,3.5,4.6
+Cauliflower fry,68.0,2.1,2.0,5.4
+Cauliflower green peas curry,56.0,2.3,3.5,2.8
+Cauliflower kurma,52.0,1.6,2.8,2.8
+Cluster beans fry,85.0,3.5,4.9,4.8
+Coriander paneer curry,180.0,11.1,12.3,10.1
+Corn capsicum curry,47.0,1.3,3.0,2.7
+Cucumber mealmaker kurma,116.0,11.0,9.5,2.9
+Double beans curry ,68.0,1.6,2.9,4.7
+Double beans fry,65.0,2.0,2.1,5.6
+Drumstic ashgourd curry,47.0,1.1,3.7,2.7
+Drumstick leaves greengram curry,112.0,6.9,10.3,3.7
+Egg curry,118.0,6.8,1.4,9.2
+Egg fry,136.0,6.7,0.9,1.1
+Jackfruit curry,72.0,0.4,0.1,5.8
+Kadai paneer,152.0,9.6,7.3,9.9
+Knolkhol fry,123.0,2.3,15.7,4.7
+Kovai curry,88.0,1.0,3.0,2.6
+Kovai fry,125.0,1.2,2.4,8.2
+Ladies finger fry,73.0,2.0,3.6,5.2
+Ladies finger tomato curry,46.0,1.2,3.2,2.7
+Mixed vegetable urma,45.0,1.0,3.0,2.7
+Mushroom amaranthus curry,54.0,2.8,2.6,2.9
+Mushroom babycorn curry,50.0,2.4,2.9,2.8
+Mushroom methi fry,75.0,4.0,2.1,5.0
+Mushroom palak curry,44.4,1.7,2.4,4.0
+Palak beans curry,64.0,3.6,2.8,3.0
+Palak curry,56.0,2.3,3.4,3.2
+Palak lotus curry,28.0,2.6,3.2,0.7
+Paneer curry,162.0,10.0,7.6,9.9
+Paneer fry,303.0,18.8,12.4,19.7
+Potato fry,36.0,0.9,1.1,2.6
+Pumpkin fry,69.0,0.8,4.0,5.1
+Rajmah curry,123.0,5.9,16.0,7.5
+Ridgegourd bengalgram curry,72.0,2.8,6.9,3.2
+Ridgegourd fry,58.0,0.9,1.7,5.1
+Ridgegourd mealmaker curry,80.0,4.1,4.1,4.5
+Ridgegourd with milk,36.0,0.9,1.8,2.6
+Snaegourd curry,41.0,0.8,2.2,4.7
+Stuffed brinjal,78.0,3.1,12.7,3.0
+Stuffed capsicum,72.0,3.3,7.7,3.0
+Stuffed Kovai,105.0,3.1,7.3,3.0
+Stuffed ladies finger,95.0,2.9,7.8,2.7
+Stuffed snakegourd,72.0,3.1,6.7,5.3
+Sweetcorn with milk,35.0,1.5,5.3,0.6
+Sweetpotato curry,87.0,0.8,13.4,2.7
+Sweetpotato drumstick fry,93.0,1.3,14.2,5.1
+Yam curry,93.0,0.3,4.4,2.6
+Fish fry,220.0,17.5,1.4,16.2
+Meat fry,239.0,15.4,3.2,18.3
+Chicken curry,136.0,19.0,2.0,6.0
+Chicken fry,228.0,14.6,2.9,12.0
+Mutton roll,164.0,6.2,16.9,8.1
+Chicken roll,189.0,28.8,0.0,7.4
+Baked chicken,237.0,27.1,0.0,13.5
+Mutton curry,109.0,11.9,1.6,5.9
+Mutton boti,110.0,12.4,0.1,6.3
+Mutton kabab,147.0,9.8,20.3,2.7
+Chicken sausage,172.0,17.8,1.5,10.0
+Egg white cooked,52.0,10.9,0.7,0.2
+Egg yolk cooked,321.0,15.8,3.6,26.4
+Boiled egg,154.0,12.5,1.1,10.6
+Scrambled egg,166.0,11.1,2.2,12.2
+Fried egg,201.0,13.6,0.9,15.3
+Poached egg,147.0,12.5,0.8,10.0
+Lamb curry,109.0,12.0,1.6,5.9
+Franfurter or Hot dog,307.0,12.7,4.5,26.1
+Beef curry,184.0,11.7,5.8,12.9
+Prawns curry,389.0,13.6,50.6,14.7
+Shrimp,144.0,27.6,1.2,2.4
+Crab curry,94.0,12.1,3.0,3.6
+Minced meat curry,172.0,9.1,2.1,14.1
+Amaranthus dhal,140.0,7.9,17.9,3.2
+Bengalgram dhal cooked,188.0,6.0,26.7,10.9
+Cucumber dhal,118.0,5.7,15.5,2.9
+Dhal makhani,137.0,6.3,16.5,4.4
+Dhal rasam,15.0,0.8,1.9,0.5
+Greengram dhal cooked,120.0,4.9,12.9,5.4
+Hoersegram dhal rasam,58.0,3.4,10.0,0.0
+Palak Dhal,139.0,8.3,18.6,3.2
+Plain Dhal,124.0,6.3,16.5,2.9
+Sambar ,82.0,3.3,9.6,2.8
+Buttermilk,15.0,0.2,0.0,0.0
+Cocoa,87.0,3.8,10.1,3.5
+Coconut water,15.0,0.2,3.1,0.6
+Coffee,90.0,4.6,6.9,5.0
+Mango juice,46.0,0.4,9.0,0.5
+Milk cows whole,65.0,3.5,4.9,3.7
+Milk skimmed milk,36.0,3.6,5.1,0.1
+Milk buffalo,108.0,4.2,4.6,8.0
+Orange juice,48.0,0.7,11.3,0.1
+Sugarcane juice,60.0,0.1,13.1,0.4
+Tea,60.0,3.1,4.6,3.0
+Beer,43.0,0.5,3.6,0.0
+Capuccino,31.0,1.7,2.4,1.7
+Chocolate milk,63.0,3.2,10.4,1.0
+Cranberry juice,54.0,0.0,13.5,0.1
+Wine,84.0,0.1,2.7,0.0
+Fruit punch,47.0,0.0,11.9,0.0
+Apple juice,47.0,0.1,11.7,0.1
+Grape juice,61.0,0.6,15.0,0.1
+Fruit smoothie,62.0,0.4,16.0,0.1
+Green tea,1.0,0.0,0.2,0.0
+Mixed vegetable juice,29.0,1.5,6.1,0.2
+Carrot juice,40.0,0.9,9.3,0.2
+Tomato and vegetable juice,22.0,0.6,4.6,0.1
+Tomato juice,17.0,0.8,4.2,0.1
+Almond milk,17.0,0.6,0.6,1.5
+Soy milk,54.0,4.6,5.1,1.9
+Milk shake,135.0,3.2,20.1,4.9
+Lemonoid,42.0,0.0,10.8,0.0
+Margarita,218.0,0.1,13.9,0.1
+Tomato juice,19.0,0.5,4.3,0.1
+Watermelon juice,21.0,0.6,3.8,0.1
+Tomato juice,19.0,0.5,4.3,0.1
+Watermelon juice,578.0,21.3,19.7,50.7
+Almonds,654,20.8,10.4,60.0
+Bengal gram roasted,372.0,22.5,58.9,5.5
+Biscuits,480.0,5.2,71.0,20.2
+Bread cake,297.0,7.0,5.8,4.3
+Bread white,269.0,8.7,50.4,3.2
+Bread whole,246.0,9.7,46.1,4.2
+Cashewnuts roasted,596.0,21.2,22.3,46.9
+Cheese,402.0,25.0,1.3,33.0
+Cheese Cake,321.0,6.0,26.0,23.0
+Chocolate,260.0,5.0,16.0,19.0
+Chocolate/Vanilla icecream   ,216.0,3.8,28.0,11.0
+Colacasia chips,69.0,0.7,3.8,4.8
+Corn flakes,386.0,8.0,85.2,0.4
+Dahi kabab,330.0,12.0,16.0,23.0
+Dahi wada,127.0,5.1,10.4,7.2
+Egg omlet,117.0,11.9,0.0,8.4
+Harabhara kabab,101.0,4.3,6.9,0.7
+Junnu,120.0,3.0,20.0,3.0
+Kaju pakoda,160.0,4.0,10.0,11.0
+Lotus seeds,90.0,1.1,24.5,2.5
+Masala papad/ Plain papad,28.0,1.3,3.0,2.6
+Mixed dried fruit ,185.0,4.2,17.1,11.5
+Murukulu,60.0,0.3,2.4,5.0
+Peanut roasted,549.0,26.7,20.3,40.1
+Peas roasted,349.0,22.9,59.1,1.4
+Popcorn,120.0,1.0,19.0,4.5
+Potato chips,150.0,2.0,16.0,9.0
+Potato Parsley,67.0,1.2,7.8,2.7
+Pumpkin seeds,584.0,21.5,15.5,47.0
+Ragi biscuits,37.0,0.6,5.5,1.4
+Regular Mixture,40.0,2.5,6.7,0.7
+Scrambled egg,117.0,11.9,0.0,8.4
+Sprouts,90.0,6.7,4.5,0.3
+Steamed egg,61.0,4.7,0.0,4.7
+Sunflower seeds,598.0,23.0,6.0,51.0
+Chickpea sundal,180.0,9.5,30.0,3.0
+Kidney beans sundals,187.0,7.9,20.9,8.4
+Tofu,55.0,4.8,2.9,2.7
+Threptin Biscuits,21.0,1.5,2.4,0.7
+Vadiyalu,80.0,0.7,7.7,4.5
+Veg. rolls,63.0,1.9,7.4,2.8
+Soan Papdi,490.0,5.3,65.0,23.0
+Burfi,285.0,6.8,38.8,12.1
+Kalakand,262.0,8.4,55.3,10.7
+Halwa,179.0,3.8,32.0,4.9
+Banana pudding,127.0,2.4,21.2,3.6
+Rasagulla,213.0,3.6,48.2,1.1
+Mysorepak,379.0,5.3,38.9,24.1
+Laddu,390.0,5.5,41.9,24.2
+Gulab jamun,323.0,7.2,39.3,15.8
+Ariselu,242.0,2.6,33.1,11.4
+Puthareulu,352.0,4.5,68.4,7.7
+Jalebi,300.0,4.2,62.4,4.3
+Sununda,263.0,4.8,37.8,7.2
+Groundnut chikki,532.0,16.8,46.8,30.8
+Coconut laddu,119.0,2.4,19.6,3.6
+Doughnuts,421.0,5.0,49.7,22.9
+Bengalgram dhal payasam,158.0,5.5,35.6,3.6
+Jam,280.0,0.1,70.0,0.1
+Jelly,282.0,0.1,70.6,0.1
+Kesari bath,313.0,2.2,39.2,16.2
+Ragi pittu,289.0,3.3,37.7,3.1
+Rice payasam,116.0,2.1,20.6,2.7
+Sago porridge,85.0,1.4,16.5,1.5
+Sweet pongal,244,2.0,63.7,2.0
+Wheat payasam,116.0,2.2,20.5,2.8
+Butter,716.0,0.6,0.4,81.0
+Cream,319.0,2.5,3.4,32.8
+Dried coconut,474.0,3.3,47.6,32.2
+Coconut fresh,354.0,3.3,15.2,33.5
+Naan,311,8.5,42.7,11.6
+Papad,371.0,25.6,58.9,3.3
+Vegetable salad,20.0,0.9,4.6,0.2
+Fruit salad,57.0,0.7,13.2,0.9
+Fruit salad with cream,75.0,0.8,12.4,3.0
+Fruit salad with pudding,85.0,1.7,17.9,0.9
+Margarine,44.0,0.1,4.3,3.0
+Cheese,148.0,22.5,13.4,0.8
+Ragi porridge,94,2.5,16.0,2.2
+Amla,58,0.5,13.7,0.1
+Apple,59,0.2,13.4,0.5
+Apricot dry,306,1.6,73.4,0.7
+Apricot fresh,53,1,11.6,0.3
+Avacado pear,215,1.7,0.8,22.8
+Bael Fruit,137,1.8,31.8,0.2
+Banana ripe,116,1.2,27.2,0.3
+Banyan tree fig,72,1.7,11.8,2
+Bilimbi,19,0.5,3.5,0.3
+Black berry,37,11.5,6.7,0.5
+Bread fruit,71,1.5,15.8,0.2
+Bullock's heart,70,1.4,15.7,0.2
+Cape Gooseberry,53,1.8,11.1,0.2
+Cashew fruit,51,0.2,12.3,0.1
+Cherries red,64,1.1,13.8,0.5
+Currants black,316,2.7,75.2,0.5
+Dates fresh,144,1.2,33.8,0.4
+Dates dry,317,2.5,75.8,0.4
+Dates fresh,144,1.2,33.8,0.4
+Figs(Ficus carcia),37,1.3,7.6,0.2
+Grape fruit marsh's seedless,45,1,10,0.1
+Grape fruit triumph,32,0.7,7,0.1
+Grapes blue,58,0.6,13.1,0.4
+Grapes pale green,71,0.5,16.5,0.3
+Guava country,51,0.9,11.2,0.3
+Guava hill,38,0.1,9,0.2
+Harfarowrie,32,0.7,5.9,0.6
+Jack fruit,88,1.9,19.8,0.1
+Jamb safed,19,0.1,3.7,0.4
+Jambu fruit,62,0.7,14,0.3
+Korukkapalli,78,2.7,16,0.4
+Lakuch raw,66,0.7,13.3,1.1
+Lemon,57,1,11.1,0.9
+Lemon sweet,35,0.7,7.3,0.3
+Lichi,61,1.1,13.6,0.2
+Lichi bastard,61,1.4,13.1,0.3
+Lime,59,1.5,10.9,0.2
+Lime sweet malta,36,0.7,7.8,0.2
+Lime sweet masumbi,43,0.8,9.3,0.3
+Loquat,43,0.6,9.6,0.3
+Mahua ripe,111,1.4,22.7,1.6
+Mango,74,11.5,16.9,0.4
+Mango ripe,74,0.6,16.9,0.4
+Mangosteen,60,0.5,14.3,0.1
+Melon musk,17,0.3,3.5,0.2
+Melon water,16,0.2,3.3,0.2
+Mulbery,49,1.1,10.3,0.4
+Orange,48,0.7,10.9,0.2
+Orange-juice,9,0.2,1.9,0.1
+Palmyra fruit ripe (mesocarp),87,0.7,20.7,0.2
+Palmyra fruit tender,29,0.6,6.5,0.1
+Papaya-ripe,32,0.6,7.2,0.1
+Passion fruit,54,0.9,12.4,0.1
+Passion fruit juice,37,1.2,7.7,0.2
+Peaches,50,1.2,10.5,0.3
+Pears,52,0.6,11.9,0.2
+Persimmon,76,0.7,17.9,0.2
+Phalsa,72,1.3,14.7,0.9
+Pineapple,46,0.4,10.8,0.1
+Plum,52,0.7,11.1,0.5
+Pomogranate,65,1.6,14.5,0.1
+Prunes,56,0.5,12.8,0.3
+Pummelo,44,0.6,10.2,0.1
+Quince,50,0.3,11.9,0.1
+Raisins,308,1.8,74.6,0.3
+Raisins,308,1.8,74.6,0.3
+Raspberry,56,1,11.7,0.6
+Rose apple,39,0.7,8.5,0.2
+Sapota,98,0.7,21.4,1.1
+Seetha phal,104,1.6,23.5,0.4
+Seethaphal,104,1.6,23.5,0.4
+Strawberry,44,0.7,9.8,0.2
+Tomatillo,31,0.7,5.8,0.6
+Tomoto ripe ,20,0.9,3.6,0.2
+Tree tomato,35,1.5,6.7,0.2
+Wood apple,134,7.1,18.1,3.7
+Zizyphus,74,0.8,17,0.3
+French fries,274,3.5,35.7,14.1
+Onion rings,258,3.2,30.5,14.1
+Crackers,502,7.4,61,25.3
+Fruit bars,351,1.8,78.5,5.3
+Puffed rice,402,6.3,89.8,0.5
+Banana chips,519,2.3,58.4,33.6
+Hamburger,257,11.6,32.3,9.2
+Cheese burger,261,14.1,23.5,12.5
+Samosa,265,7,33.5,11.5
+Vegetable puff,360,7.5,45.3,16.5
+Egg puff,292,6.2,23.1,19.6
+Veg burger,177,15.7,14.3,6.3
+Cheese pizza,276,12.3,30.3,11.7
+Papdi chat,189,4.8,24.9,7.9
+Aloo tikka chat,115,2.7,15.2,5.8
+Samosa chat,253,7.8,27.8,13.1
+Pani puri,307,6.1,52.3,12.8
+Gobi manchuria,175,2.9,21.3,9
+Chickken burger,237,27.1,0,13.5
+Mutton chops,133,15.7,2.3,6.4
+Chicken nuggets,297,15.6,16.3,18.8
+Cookies,486.0,5.4,68.9,21.4
+Peanut butter cookies,477.0,9.6,58.9,23.6
+Cheese cake,321,5.5,25.5,22.5
+Chocolate cake without icing,358,5.3,53.4,15.1
+Chocolate cake with icing,367,4.1,54.6,16.4
+Multigrain bread,65,2.6,12.1,1
+Bread rolls,300,8.4,50.4,7.3
+Bread sticks,412,12,68.4,9.5
+Sweet bun,372,6.2,50.9,16.4
+Bagel,257,10.2,50.5,1.6
+Croissant,406,8.2,45.8,21
+Sponge cake,297,7.3,57.7,4.3
+Milk chocolate,535,7.7,59.4,29.7
+Plain chocolate,479,4.2,63.1,30
+Dark Chocolate,505,3.9,59.6,34.2
+White chocolate chips,539,5.9,59.2,32.1
+Chocolate chips,479,4.2,63.1,30
+Cereal Bars,420,7.1,69.8,17.6
+Chocolate wafers,433,6.6,72.4,14.2
+Cream wafers,511,4.1,70.1,24.3
+Vanilla wafer,473,4.3,71.1,19.4
+Chicken soup,31,1.7,3.9,1
+Tomato soup,42,1.3,7.4,1.2
+Vegetable soup,59,1.7,9.8,1.6
+Cream of tomato soup,55,2.4,9.1,1.3
+Vegetable stew,56,2.7,9.7,0.9
+Chicken stew with vegetables,80,6.8,80,1.8
+Mutton stew with vegetables,95,8.3,11.1,1.9
+Bone soup,16,3.1,0.2,0.3
+ICE CREAMS,201,3.5,24.4,10.7
+Vanilla icecream,201,3.5,23.6,11
+Chocolate icecrream,216,3.8,28.2,11
+Ice cream cone,218,3.9,29.3,10.1
+Ice cream bar or sticks,201,3.5,23.6,11
+Butterscotch icecream,255,4.1,26.8,14.6
+Strawberry icecream,192,3.2,27.6,8.4
+Ice cream cone with nuts,204,5.9,25.7,16.2

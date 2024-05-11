@@ -1,6 +1,9 @@
 import gradio as gr
 from transformers import pipeline
 import pandas as pd
+import warnings
+warnings.filterwarnings('ignore')
+
 
 # Load TableQA pipeline
 table_qa = pipeline('table-question-answering', model='google/tapas-base-finetuned-wtq')
@@ -18,9 +21,12 @@ iface = gr.Interface(
     fn=answer_question, 
     inputs=gr.Textbox(lines=2, label="Question"), 
     outputs="text",
-    theme="compact",
-    title="TableQA Chat Interface",
-    description="Ask a question about the data in the fixed CSV file.",
+    title="Nutrition Expert Chat Interfacee",
+    description="""
+    This interface allows you to ask questions about the nutritional content of various foods. 
+    The QA Model is based on a Nutrition dataset collected by Padmavathi University Dept which includes information about the energy (in Kcal), protein (in g), carbohydrates (in g), and fat (in g) content per 100g of various foods. 
+    You can ask questions like 'What is the energy content of baked macaroni pasta?' or 'Which food has the highest protein content?'.
+    """,
 )
 
 iface.launch()

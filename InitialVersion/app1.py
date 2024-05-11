@@ -1,4 +1,4 @@
-from fooditems import fi
+from FinalVersions.fooditems import fi
 import gradio as gr
 from fuzzywuzzy import process
 
