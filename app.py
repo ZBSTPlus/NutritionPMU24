@@ -10,55 +10,48 @@ data_dict = data.set_index('Food/100g').T.to_dict()
 def getData(food):
     return data_dict[food]
 
-def calculate_nutrition(name, gt, w, breakfast, bf_gms, lunch, lun_gms, dinner, din_gms):
-    bf = getData(breakfast)
-    lun = getData(lunch)
-    din = getData(dinner)
+def calculate_nutrition(name, gt, w, h, breakfast, bf_gms, lunch, lun_gms, dinner, din_gms):
+    # Split the grams input strings into lists and use 100 as default value
+    bf_gms = list(map(int, bf_gms.split(','))) if bf_gms else [100]*len(breakfast)
+    bf_gms = bf_gms + [100]*(len(breakfast)-len(bf_gms))
+    lun_gms = list(map(int, lun_gms.split(','))) if lun_gms else [100]*len(lunch)
+    lun_gms = lun_gms + [100]*(len(lunch)-len(lun_gms))
+    din_gms = list(map(int, din_gms.split(','))) if din_gms else [100]*len(dinner)
+    din_gms = din_gms + [100]*(len(dinner)-len(din_gms))
 
-    bf_e = bf['Energy(Kcal)'] * (bf_gms / 100)
-    bf_p = bf['Protein(g)'] * (bf_gms / 100)
-    bf_c = bf['Carbohydrate(g)'] * (bf_gms / 100)
-    bf_f = bf['Fat(g)'] * (bf_gms / 100)
+    # Initialize total energy, protein, carbs, and fat
+    total_e, total_p, total_c, total_f = 0, 0, 0, 0
 
-    lun_e = lun['Energy(Kcal)'] * (lun_gms / 100)
-    lun_p = lun['Protein(g)'] * (lun_gms / 100)
-    lun_c = lun['Carbohydrate(g)'] * (lun_gms / 100)
-    lun_f = lun['Fat(g)'] * (lun_gms / 100)
+    # Calculate nutrition for each meal
+    for meal, gms in zip([breakfast, lunch, dinner], [bf_gms, lun_gms, din_gms]):
+        for item, gm in zip(meal, gms):
+            data = getData(item)
+            total_e += data['Energy(Kcal)'] * (gm / 100)
+            total_p += data['Protein(g)'] * (gm / 100)
+            total_c += data['Carbohydrate(g)'] * (gm / 100)
+            total_f += data['Fat(g)'] * (gm / 100)
 
-    din_e = din['Energy(Kcal)'] * (din_gms / 100)
-    din_p = din['Protein(g)'] * (din_gms / 100)
-    din_c = din['Carbohydrate(g)'] * (din_gms / 100)
-    din_f = din['Fat(g)'] * (din_gms / 100)
-
-    total_e = round(sum([bf_e, lun_e, din_e]), 2)
-    total_p = round(sum([bf_p, lun_p, din_p]), 2)
-    total_c = round(sum([bf_c, lun_c, din_c]), 2)
-    total_f = round(sum([bf_f, lun_f, din_f]), 2)
-
+    # Calculate EAR and RDA
     ear_energy = ear_rda[gt]["Energy"]
     rda_protein = ear_rda[gt]["Protein"]
     total_ear_energy = round(float(ear_energy) * float(w),3)
     total_rda_protein = round(float(rda_protein) * float(w),3)
 
+    # Check if intake is adequate and calculate percentage
     energy_status = "adequate" if total_e >= total_ear_energy else "inadequate"
+    energy_percentage = round((total_e / total_ear_energy) * 100, 2)
     protein_status = "adequate" if total_p >= total_rda_protein else "inadequate"
+    protein_percentage = round((total_p / total_rda_protein) * 100, 2)
 
     return {
-        "Energy Intake Status": energy_status,
-        "Protein Intake Status": protein_status,
-        "Total Energy (Kcal) Consumed in the Day": total_e,
-        "Total Protein (g) Consumed in the Day": total_p,
+        "Energy Intake Status": f"{energy_status} ({energy_percentage}% of required intake)",
+        "Protein Intake Status": f"{protein_status} ({protein_percentage}% of required intake)",
+        "Total Energy (Kcal) Consumed in the Day": round(total_e,3),
+        "Total Protein (g) Consumed in the Day": round(total_p,3),
         "Total EAR(Estimated Average Requirements) Energy for the Day (Kcal)": total_ear_energy,
         "Total RDA(Recommended Dietary Allowances) Protein for the Day (g)": total_rda_protein,
-        "Total Carbohydrates (g) Consumed in a Day": total_c,
-        "Total Fat (g) Consumption in a Day": total_f,
-        # "Average Energy Consumption": round(total_e / 3, 3),
-        # "Average Fat Consumption": round(total_f / 3, 3),
-        # "Average Carbohydrates Consumption": round(total_c / 3, 3),
-        # "Average Protein Consumption": round(total_p / 3, 3),
-        # "breakfast": bf,
-        # "lunch":lun,
-        # "dinner":din
+        "Total Carbohydrates (g) Consumed in a Day": round(total_c,3),
+        "Total Fat (g) Consumption in a Day": round(total_f,3),
     }
 
 def suggest_options(input, options):
@@ -75,12 +68,13 @@ iface = gr.Interface(
         gr.Textbox(label="Enter Your Name"),
         gr.Dropdown(ear_rda,label="Select Your Gender and Type of Work"),
         gr.Number(label="Enter Your Weight (in Kg)"),
+        gr.Number(label="Enter Your Height (in cm)"),
         gr.Dropdown(fi, label="Select Breakfast Items", multiselect=True),
-        gr.Number(label="Enter the Quantity of Each Breakfast Item in Grams (separated by commas if multiple items are selected)"),
+        gr.Textbox(label="Enter the Quantity of Each Breakfast Item in Grams (separated by commas if multiple items are selected)"),
         gr.Dropdown(fi, label="Select Lunch Items", multiselect=True),
-        gr.Number(label="Enter the Quantity of Each Lunch Item in Grams"),
+        gr.Textbox(label="Enter the Quantity of Each Lunch Item in Grams"),
         gr.Dropdown(fi, label="Select Dinner Items", multiselect=True),
-        gr.Number(label="Enter the Quantity of Each Dinner Item in Grams")
+        gr.Textbox(label="Enter the Quantity of Each Dinner Item in Grams")
     ], 
     # Define the output
     outputs="json",
@@ -103,7 +97,7 @@ iface = gr.Interface(
 </ul>
 
 <h5>Financial Support by DST-CURIE Artificial Intelligence Centre, SPMVV, Tirupati</h5>
-<h5>Technical Support by Venkata Viswanath L</h5>
+<h4>Technical Support by Venkata Viswanath L</h4>
 
 <hr>
 
