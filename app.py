@@ -10,21 +10,28 @@ data_dict = data.set_index('Food/100g').T.to_dict()
 def getData(food):
     return data_dict[food]
 
-def calculate_nutrition(name, gt, w, h, breakfast, bf_gms, lunch, lun_gms, dinner, din_gms):
+def suggest_options(input, options):
+    if input == "":
+        return []
+    else:
+        return [option for option in options if input.lower() in option.lower()]
+
+def calculate_nutrition(name, gt, w, h, early_morning, em_gms, breakfast, bf_gms, mid_morning, mm_gms, lunch, lun_gms, evening_snacks, es_gms, dinner, din_gms, bed_time, bt_gms):
     # Split the grams input strings into lists and use 100 as default value
-    bf_gms = list(map(int, bf_gms.split(','))) if bf_gms else [100]*len(breakfast)
-    bf_gms = bf_gms + [100]*(len(breakfast)-len(bf_gms))
-    lun_gms = list(map(int, lun_gms.split(','))) if lun_gms else [100]*len(lunch)
-    lun_gms = lun_gms + [100]*(len(lunch)-len(lun_gms))
-    din_gms = list(map(int, din_gms.split(','))) if din_gms else [100]*len(dinner)
-    din_gms = din_gms + [100]*(len(dinner)-len(din_gms))
+    meals = [early_morning, breakfast, mid_morning, lunch, evening_snacks, dinner, bed_time]
+    gms_inputs = [em_gms, bf_gms, mm_gms, lun_gms, es_gms, din_gms, bt_gms]
+    gms = []
+    for meal, gm_input in zip(meals, gms_inputs):
+        gm = list(map(int, gm_input.split(','))) if gm_input else [100]*len(meal)
+        gm = gm + [100]*(len(meal)-len(gm))
+        gms.append(gm)
 
     # Initialize total energy, protein, carbs, and fat
     total_e, total_p, total_c, total_f = 0, 0, 0, 0
 
     # Calculate nutrition for each meal
-    for meal, gms in zip([breakfast, lunch, dinner], [bf_gms, lun_gms, din_gms]):
-        for item, gm in zip(meal, gms):
+    for meal, gm in zip(meals, gms):
+        for item, gm in zip(meal, gm):
             data = getData(item)
             total_e += data['Energy(Kcal)'] * (gm / 100)
             total_p += data['Protein(g)'] * (gm / 100)
@@ -54,12 +61,6 @@ def calculate_nutrition(name, gt, w, h, breakfast, bf_gms, lunch, lun_gms, dinne
         "Total Fat (g) Consumption in a Day": round(total_f,3),
     }
 
-def suggest_options(input, options):
-    if input == "":
-        return []
-    else:
-        return [option for option in options if input.lower() in option.lower()]
-
 iface = gr.Interface(
     # Function to calculate nutrition
     fn=calculate_nutrition, 
@@ -69,12 +70,20 @@ iface = gr.Interface(
         gr.Dropdown(ear_rda,label="Select Your Gender and Type of Work"),
         gr.Number(label="Enter Your Weight (in Kg)"),
         gr.Number(label="Enter Your Height (in cm)"),
+        gr.Dropdown(fi, label="Select Early Morning Items", multiselect=True),
+        gr.Textbox(label="Enter the Quantity of Each Early Morning Item in Grams  (separated by commas if multiple items are selected)"),
         gr.Dropdown(fi, label="Select Breakfast Items", multiselect=True),
-        gr.Textbox(label="Enter the Quantity of Each Breakfast Item in Grams (separated by commas if multiple items are selected)"),
+        gr.Textbox(label="Enter the Quantity of Each Breakfast Item in Grams"),
+        gr.Dropdown(fi, label="Select Mid Morning Items", multiselect=True),
+        gr.Textbox(label="Enter the Quantity of Each Mid Morning Item in Grams"),
         gr.Dropdown(fi, label="Select Lunch Items", multiselect=True),
-        gr.Textbox(label="Enter the Quantity of Each Lunch Item in Grams"),
+        gr.Textbox(label="Enter the Quantity of Each Lunch Item in Grams (separated by commas)"),
+        gr.Dropdown(fi, label="Select Evening Snacks Items", multiselect=True),
+        gr.Textbox(label="Enter the Quantity of Each Evening Snacks Item in Grams"),
         gr.Dropdown(fi, label="Select Dinner Items", multiselect=True),
-        gr.Textbox(label="Enter the Quantity of Each Dinner Item in Grams")
+        gr.Textbox(label="Enter the Quantity of Each Dinner Item in Grams"),
+        gr.Dropdown(fi, label="Select Bed Time Items", multiselect=True),
+        gr.Textbox(label="Enter the Quantity of Each Bed Time Item in Grams")
     ], 
     # Define the output
     outputs="json",
@@ -129,4 +138,5 @@ If our work is beneficial for your research, please consider citing:
 If you have any queries, please feel free to contact Dr.R.Bharathi or Venkata Viswanath at <b>varun.codeq@gmail.com</b>.
 """
 )
+
 iface.launch()
