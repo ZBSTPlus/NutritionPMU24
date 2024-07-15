@@ -1,4 +1,4 @@
-from fooditems import fi, ear_rda
+from fooditems import fi, ear_rda, description, article
 import gradio as gr
 import pandas as pd
 import warnings
@@ -21,9 +21,13 @@ def calculate_nutrition(name, gt, w, h, early_morning, em_gms, breakfast, bf_gms
     meals = [early_morning, breakfast, mid_morning, lunch, evening_snacks, dinner, bed_time]
     gms_inputs = [em_gms, bf_gms, mm_gms, lun_gms, es_gms, din_gms, bt_gms]
     gms = []
+
     for meal, gm_input in zip(meals, gms_inputs):
-        gm = list(map(int, gm_input.split(','))) if gm_input else [100]*len(meal)
-        gm = gm + [100]*(len(meal)-len(gm))
+        if meal is None:
+            gm = []
+        else:
+            gm = list(map(int, gm_input.split(','))) if gm_input else [100]*len(meal)
+            gm = gm + [100]*(len(meal)-len(gm))
         gms.append(gm)
 
     # Initialize total energy, protein, carbs, and fat
@@ -31,12 +35,14 @@ def calculate_nutrition(name, gt, w, h, early_morning, em_gms, breakfast, bf_gms
 
     # Calculate nutrition for each meal
     for meal, gm in zip(meals, gms):
-        for item, gm in zip(meal, gm):
-            data = getData(item)
-            total_e += data['Energy(Kcal)'] * (gm / 100)
-            total_p += data['Protein(g)'] * (gm / 100)
-            total_c += data['Carbohydrate(g)'] * (gm / 100)
-            total_f += data['Fat(g)'] * (gm / 100)
+        if meal is not None:
+            for item, gm in zip(meal, gm):
+                if item is not None:
+                    data = getData(item)
+                    total_e += data['Energy(Kcal)'] * (gm / 100)
+                    total_p += data['Protein(g)'] * (gm / 100)
+                    total_c += data['Carbohydrate(g)'] * (gm / 100)
+                    total_f += data['Fat(g)'] * (gm / 100)
 
     # Calculate EAR and RDA
     ear_energy = ear_rda[gt]["Energy"]
@@ -92,51 +98,13 @@ iface = gr.Interface(
     # Set the theme
     theme="gradio/monochrome",
     # Set the description
-    description="""
-<h2>Purpose:</h2>
-<h3>We aim to provide a detailed analysis of your daily nutrient intake, including Energy, Protein, Carbohydrate, and Fat content of various food items consumed throughout the day.</h3>
-
-<h3>Besides calculating your total nutrient intake, we also compare your intake against the Estimated Average Requirements (EAR) of Calorie Intake and Recommended Dietary Allowances (RDA) of Proteins. This comparison helps you understand whether your nutrient intake is adequate for your body weight and activity level.</h3>
-
-<h4>Developed by:</h4>
-<ul>
-<h4><li>Dr.R.Bharathi, Assistant Professor, Department of Home Science, SPMVV, Tirupati</li></h4>
-<h4><li>Dr.N.Rajani, Registrar, SPMVV, Tirupati</li></h4>
-<h4><li>Ms. Kaipa Chandana Sree, Academic Consultant, Dept. of Computer science, SPMVV, Tirupati</li></h4>
-</ul>
-
-<h5>Financial Support by DST-CURIE Artificial Intelligence Centre, SPMVV, Tirupati</h5>
-<h4>Technical Support by Venkata Viswanath L</h4>
-
-<hr>
-
-<h3>To begin, input what you consumed for breakfast, lunch, and dinner, along with the respective quantities. The calculator will provide a detailed breakdown of your nutrition intake and compare it against the EAR and RDA values.</h3>
-""",
+    description=description,
     # Disable flagging
     allow_flagging=False,
     # Hide the footer
     css="footer {display: none !important}",
     # Set the article
-    article = r"""
-📝 **How to Cite Our Work**
-<br>
-If our work is beneficial for your research, please consider citing:
-```bibtex
-@article{VLNutritionCalculator,
-  title={Nutrition Calculator: A Tool for Calculating Total Nutrient Intake per day and Comparing against Estimated Average Requirements (EAR) of Calorie Intake and Recommended Dietary Allowances (RDA)},
-  author={Dr.R.Bharathi, Dr.N.Rajani and Ms. Kaipa Chandana Sree},
-  year={2024}
-}
-```
-
-<br>
-
-**📋 License Information**
-<br> The Code is licensed under cc-by-4.0 License. <br> 
-**📧 Get in Touch** 
-<br> 
-If you have any queries, please feel free to contact Dr.R.Bharathi or Venkata Viswanath at <b>varun.codeq@gmail.com</b>.
-"""
+    article = article
 )
 
 iface.launch()
